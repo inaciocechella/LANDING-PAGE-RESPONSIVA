@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augere - Soluções em Engenharia e Fabricação</title>
+    
+    <meta name="description" content="Soluções completas em Engenharia Reversa, Escaneamento 3D, Impressão 3D de Alta Resistência e Usinagem CNC em Criciúma, SC.">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#inicio" class="logo">
+                <img src="img/logo.png" alt="Logo Augere">
+            </a>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <img src="img/logo.png" alt="Logo Augere" class="hero-logo">
+                
+                <h1>Soluções Completas em Engenharia e Fabricação</h1>
+                <p>Do Escaneamento 3D à Usinagem CNC. Transformamos seus desafios de engenharia em soluções reais em Criciúma e região.</p>
+                <a href="https://wa.me/5548991096773" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Solicite um Orçamento
+                </a>
+            </div>
+        </section>
+
+        <section id="servicos" class="bg-dark">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                
+                <div class="grid-container grid-3"> 
+                    <div class="card service-tab-link active" data-tab="tab-1">
+                        <i class="fas fa-ruler-combined"></i>
+                        <h3>Engenharia Reversa e Escaneamento 3D</h3>
+                        <p>Digitalizamos sua peça com precisão e a transformamos em um modelo CAD paramétrico, pronto para melhorias ou nova fabricação.</p>
+                    </div>
+                    <div class="card service-tab-link" data-tab="tab-2">
+                        <i class="fas fa-print"></i>
+                        <h3>Impressão 3D de Alta Resistência</h3>
+                        <p>Fabricação de peças finais e protótipos funcionais em polímeros de engenharia (PA-CF, ASA, TPU) que suportam altas cargas e temperaturas.</p>
+                    </div>
+                    <div class="card service-tab-link" data-tab="tab-3">
+                        <i class="fas fa-industry"></i>
+                        <h3>Usinagem CNC (Parceria)</h3>
+                        <p>Produção de peças em metal (alumínio, aço, inox) com precisão de centro de usinagem e torno CNC, do protótipo à produção em série.</p>
+                    </div>
+                </div>
+
+                <div class="tabs-content">
+
+                    <div id="tab-1" class="tab-pane active">
+                        <h3>Engenharia Reversa e Escaneamento 3D</h3>
+                        <p class="tab-description">Nosso processo transforma sua peça física em um ativo digital inteligente. Usamos escaneamento 3D de alta precisão para capturar a geometria exata. A partir daí, oferecemos diferentes níveis de tratamento de arquivo, dependendo da sua necessidade:</p>
+                        
+                        <div class="swiper service-detail-swiper">
+                            <div class="swiper-wrapper">
+                                
+                                <div class="swiper-slide">
+                                    <div class="detalhe-card">
+                                        <img src="https://via.placeholder.com/400x300.png?text=Malha+3D+(STL)" alt="Arquivo em Malha .STL">
+                                        <h4>Arquivo em Malha (.STL)</h4>
+                                        <p>Entregamos um arquivo de malha 3D (.stl ou .obj) otimizado e limpo, ideal para replicação direta em impressão 3D ou como referência visual em projetos.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="detalhe-card">
+                                        <img src="https://via.placeholder.com/400x300.png?text=CAD+Paramétrico" alt="Arquivo Paramétrico (CAD)">
+                                        <h4>Arquivo Paramétrico (CAD)</h4>
+                                        <p>Recriamos a peça do zero em software CAD (.step, .sldprt) usando a malha como referência. O resultado é um arquivo "inteligente", editável e pronto para usinagem.</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="detalhe-card">
+                                        <img src="https://via.placeholder.com/400x300.png?text=Projeto+com+Melhorias" alt="Projeto com Melhorias (CAD)">
+                                        <h4>Projeto com Melhorias (CAD)</h4>
+                                        <p>Analisamos a peça original, identificamos pontos de falha e aplicamos melhorias de engenharia (reforços, nervuras, otimização de peso) no novo projeto CAD.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination-service"></div>
+                        </div>
+                    </div>
+
+                    <div id="tab-2" class="tab-pane">
+                        <h3>Impressão 3D de Alta Resistência</h3>
+                        <p class="tab-description">Vamos além do protótipo visual. Com nosso Creality Raptor Pro, imprimimos peças funcionais usando filamentos de engenharia projetados para substituir metal em aplicações de alta exigência mecânica, térmica e química. Conheça nossos principais materiais:</p>
+                        
+                        <div class="swiper material-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="material-card">
+                                        <img src="https://via.placeholder.com/300x200.png?text=PA6-CF" alt="Filamento PA6-CF SUNLU">
+                                        <h3>PA6-CF (SUNLU)</h3>
+                                        <ul>
+                                            <li><strong>Resistência à Tração:</strong> 170 MPa</li>
+                                            <li><strong>Resistência Térmica:</strong> ~209°C</li>
+                                            <li><strong>Preço:</strong> $$$</li>
+                                            <li><strong>Aplicação:</strong> Peças estruturais, componentes automotivos, gabaritos e substituição de peças de metal.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="material-card">
+                                        <img src="https://via.placeholder.com/300x200.png?text=PA6" alt="Filamento PA6 DynaLabs">
+                                        <h3>PA6 (DynaLabs)</h3>
+                                        <ul>
+                                            <li><strong>Resistência à Tração:</strong> 79 MPa</li>
+                                            <li><strong>Resistência Térmica:</strong> ~100°C (Serviço)</li>
+                                            <li><strong>Preço:</strong> $$</li>
+                                            <li><strong>Aplicação:</strong> Engenharia mecânica, engrenagens, mancais e peças de alta resistência ao desgaste.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="material-card">
+                                        <img src="https://via.placeholder.com/300x200.png?text=ASA" alt="Filamento ASA Elegoo">
+                                        <h3>ASA (Elegoo)</h3>
+                                        <ul>
+                                            <li><strong>Resistência à Tração:</strong> 42 MPa</li>
+                                            <li><strong>Resistência Térmica:</strong> ~88°C</li>
+                                            <li><strong>Preço:</strong> $$</li>
+                                            <li><strong>Aplicação:</strong> Peças para uso externo, carenagens, componentes automotivos e protótipos resistentes a raios UV.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="material-card">
+                                        <img src="https://via.placeholder.com/300x200.png?text=PETG" alt="Filamento PETG Sunlu">
+                                        <h3>PETG (Sunlu)</h3>
+                                        <ul>
+                                            <li><strong>Resistência à Tração:</strong> 61 MPa</li>
+                                            <li><strong>Resistência Térmica:</strong> ~63°C</li>
+                                            <li><strong>Preço:</strong> $$</li>
+                                            <li><strong>Aplicação:</strong> Peças funcionais, protótipos resistentes à umidade e a alguns químicos, encaixes e suportes.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="material-card">
+                                        <img src="https://via.placeholder.com/300x200.png?text=TPU" alt="Filamento TPU DynaLabs">
+                                        <h3>TPU (DynaLabs)</h3>
+                                        <ul>
+                                            <li><strong>Resistência à Tração:</strong> 40 MPa</li>
+                                            <li><strong>Resistência Térmica:</strong> ~60°C</li>
+                                            <li><strong>Preço:</strong> $$$</li>
+                                            <li><strong>Aplicação:</strong> Peças flexíveis ("borracha"), amortecedores de impacto, vedações, protetores e grips.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="material-card">
+                                        <img src="https://via.placeholder.com/300x200.png?text=PLA" alt="Filamento PLA Sunlu">
+                                        <h3>PLA (Sunlu)</h3>
+                                        <ul>
+                                            <li><strong>Resistência à Tração:</strong> 61 MPa</li>
+                                            <li><strong>Resistência Térmica:</strong> ~55°C</li>
+                                            <li><strong>Preço:</strong> $</li>
+                                            <li><strong>Aplicação:</strong> Prototipagem rápida de baixo custo, modelos visuais, peças de design e artesanato.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div> {/* ADICIONADO */}
+                            <div class="swiper-button-prev"></div> {/* ADICIONADO */}
+                            <div class="swiper-pagination-material"></div>
+                        </div>
+                    </div>
+
+                    <div id="tab-3" class="tab-pane">
+                        <h3>Usinagem CNC (Parceria Estratégica)</h3>
+                        <p class="tab-description">Para produção em escala ou quando as propriedades do metal são indispensáveis, contamos com uma forte parceria em serviços de usinagem. Isso nos permite oferecer a solução completa: prototipamos em 3D e, após a validação, gerenciamos a fabricação da sua peça em metal.</p>
+                        
+                        <div class="grid-container grid-2">
+                            <div class="detalhe-card">
+                                <img src="https://via.placeholder.com/400x300.png?text=Centro+de+Usinagem+CNC" alt="Centro de Usinagem CNC">
+                                <h4>Centro de Usinagem CNC</h4>
+                                <p>Ideal para peças prismáticas e complexas (blocos, suportes, moldes) que exigem fresamento em múltiplos eixos (3, 4 ou 5 eixos) em alumínio, aço, inox, latão e outros.</p>
+                            </div>
+                            <div class="detalhe-card">
+                                <img src="https://via.placeholder.com/400x300.png?text=Torno+CNC" alt="Torno CNC">
+                                <h4>Torno CNC</h4>
+                                <p>Perfeito para peças de revolução (eixos, pinos, buchas, flanges). Oferece altíssima precisão dimensional e acabamento superficial para componentes cilíndricos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Portfólio / Estudos de Caso</h2>
+                <p class="subtitle">Veja na prática como resolvemos os problemas dos nossos clientes.</p>
+                
+                <div class="swiper portfolio-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="portfolio-item">
+                                <img src="https://via.placeholder.com/400x300.png?text=Projeto+Kart" alt="Projeto Kart">
+                                <div class="portfolio-info">
+                                    <h3>Projeto Kart (Peça de Performance)</h3>
+                                    <p>Engenharia reversa de componente de suspensão, otimizado e impresso em PA-CF.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-item">
+                                <img src="https://via.placeholder.com/400x300.png?text=Manutenção+Industrial" alt="Manutenção Industrial">
+                                <div class="portfolio-info">
+                                    <h3>Manutenção Industrial</h3>
+                                    <p>Engenharia reversa e usinagem de peça descontinuada, evitando parada de máquina.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-item">
+                                <img src="https://via.placeholder.com/400x300.png?text=Projeto+Drone" alt="Projeto Drone">
+                                <div class="portfolio-info">
+                                    <h3>Projeto Drone (Prototipagem)</h3>
+                                    <p>Prototipagem rápida de um novo frame de drone em ASA para validação de design.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-item">
+                                <img src="https://via.placeholder.com/400x300.png?text=Projeto+Airsoft" alt="Projeto Airsoft">
+                                <div class="portfolio-info">
+                                    <h3>Customização Airsoft</h3>
+                                    <p>Design e impressão de acessório customizado de alta resistência.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-item">
+                                <img src="https://via.placeholder.com/400x300.png?text=Digitalização+3D" alt="Digitalização 3D">
+                                <div class="portfolio-info">
+                                    <h3>Escaneamento de Precisão</h3>
+                                    <p>Digitalização de peça complexa para engenharia reversa e controle de qualidade.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-item">
+                                <img src="https://via.placeholder.com/400x300.png?text=Solução+Híbrida" alt="Solução Híbrida">
+                                <div class="portfolio-info">
+                                    <h3>Gabarito de Produção</h3>
+                                    <p>Manufatura híbrida: gabarito impresso em 3D com insertos metálicos usinados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="diferenciais">
+            <div class="container">
+                <h2>Por que escolher a Augere?</h2>
+                <div class="grid-container grid-3">
+                    <div class="card-diferencial">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>One-Stop-Shop</h3>
+                        <p>Cuidamos de todo o ciclo: do escaneamento do seu problema ao protótipo impresso em 3D e à peça final usinada em metal. Um só fornecedor para sua solução completa.</p>
+                    </div>
+                    <div class="card-diferencial">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Velocidade e Resposta Rápida</h3>
+                        <p>Entendemos a urgência da manutenção industrial. Nossa estrutura permite a entrega de peças de reposição críticas em horas ou dias, não em semanas.</p>
+                    </div>
+                    <div class="card-diferencial">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Tecnologia de Ponta</h3>
+                        <p>Investimos em equipamentos e materiais que entregam performance. Do scanner Raptor Pro aos filamentos de fibra de carbono, garantimos a qualidade de engenharia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contato">
+        <div class="container">
+            <h2>Vamos tirar seu projeto do papel?</h2>
+            <p>Entre em contato conosco e solicite um orçamento sem compromisso.</p>
+            
+            <div class="contato-info">
+                <a href="https://wa.me/5548991096773" target="_blank" class="contato-link">
+                    <i class="fab fa-whatsapp"></i>
+                    (48) 99109-6773
+                </a>
+                <a href="mailto:comercial@augere.tec.br" class="contato-link">
+                    <i class="fas fa-envelope"></i>
+                    comercial@augere.tec.br
+                </a>
+            </div>
+            
+            <div class="contato-local">
+                <i class="fas fa-map-marker-alt"></i>
+                Criciúma, Santa Catarina
+            </div>
+
+            <div class="social-links">
+                <a href="https://instagram.com/augere.tec" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            
+            <p class="copyright">
+                &copy; <script>document.write(new Date().getFullYear())</script> Augere Tecnologia em Fabricação. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

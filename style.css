@@ -1,0 +1,605 @@
+/* ====================
+   CONFIGURAÇÕES GLOBAIS
+   ==================== */
+:root {
+    --cor-primaria: #4D5BFF; 
+    --cor-fundo-dark: #0B0B1A; 
+    --cor-fundo-card: #14142B; 
+    --cor-texto-principal: #F0F0F5;
+    --cor-texto-secundario: #A0A0B3;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo-dark);
+    color: var(--cor-texto-principal);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* Títulos alinhados à esquerda */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: left; 
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h1 {
+    text-align: center; /* H1 da Hero continua centralizado */
+}
+
+p {
+    color: var(--cor-texto-secundario);
+    font-size: 1.1rem;
+}
+
+.subtitle {
+    text-align: left; 
+    font-size: 1.2rem;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 40px;
+}
+
+.bg-dark {
+    background-color: #080815; 
+}
+
+.grid-container {
+    display: grid;
+    gap: 30px;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* ====================
+   HEADER (CABEÇALHO)
+   ==================== */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(11, 11, 26, 0.85); 
+    backdrop-filter: blur(10px); 
+    border-bottom: 1px solid #2a2a4a;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 30px;
+}
+
+.nav-menu a {
+    color: var(--cor-texto-principal);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--cor-primaria);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ====================
+   SEÇÃO HERO (INÍCIO)
+   ==================== */
+.hero {
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background-image: url('img/fundo-escuro.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(11, 11, 26, 0.7), rgba(11, 11, 26, 0.9));
+}
+
+.hero-content {
+    position: relative; 
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero-logo {
+    max-width: 350px; 
+    width: 80%;       
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 40px;
+    text-align: center; 
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--cor-primaria);
+}
+
+.btn-primary:hover {
+    background-color: #3a48e0;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(77, 91, 255, 0.2);
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+/* ====================
+   SEÇÃO SERVIÇOS (UNIFICADA)
+   ==================== */
+#servicos .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background: var(--cor-fundo-card);
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 1px solid #2a2a4a;
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer; 
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--cor-primaria);
+}
+
+.card.service-tab-link.active {
+    background: #1f1f3d;
+    border-color: var(--cor-primaria);
+}
+
+.card i {
+    font-size: 3rem;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+}
+
+.card p {
+    flex-grow: 1; 
+}
+
+/* CONTEÚDO DAS ABAS */
+.tabs-content {
+    margin-top: 60px; 
+}
+
+.tab-pane {
+    display: none; 
+}
+
+.tab-pane.active {
+    display: block; 
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-pane h3 {
+    font-size: 2.2rem;
+    color: var(--cor-texto-principal);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #2a2a4a;
+}
+
+.tab-description {
+    text-align: left; 
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.detalhe-card {
+    background: var(--cor-fundo-card);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #2a2a4a;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.detalhe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.detalhe-card h4 {
+    font-size: 1.4rem;
+    padding: 25px 25px 0 25px;
+}
+
+.detalhe-card p {
+    font-size: 1rem;
+    padding: 0 25px 25px 25px;
+    flex-grow: 1;
+}
+
+/* Carrossel de Detalhes do Serviço (Eng. Reversa) */
+.service-detail-swiper {
+    width: 100%;
+    padding-bottom: 50px; 
+}
+
+.service-detail-swiper .swiper-slide {
+    height: auto; 
+}
+.service-detail-swiper .detalhe-card {
+    height: 100%; 
+}
+
+.swiper-pagination-service .swiper-pagination-bullet {
+    background: var(--cor-texto-secundario) !important;
+}
+.swiper-pagination-service .swiper-pagination-bullet-active {
+    background: var(--cor-primaria) !important;
+}
+
+/* Carrossel de Materiais */
+.material-swiper {
+    width: 100%;
+    padding-bottom: 50px; 
+}
+
+.material-card {
+    background: var(--cor-fundo-card);
+    border: 1px solid #2a2a4a;
+    border-radius: 10px;
+    overflow: hidden; /* Garante que a imagem respeite o card */
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.material-card img {
+    width: 100%;
+    height: 180px; /* Altura fixa para as imagens */
+    object-fit: cover;
+    margin-bottom: 20px; /* Espaço entre imagem e texto */
+}
+
+.material-card h3 {
+    font-size: 1.6rem;
+    color: var(--cor-primaria);
+    border-bottom: 1px solid #2a2a4a;
+    padding: 0 30px 15px 30px; /* Ajusta padding do título */
+    margin-bottom: 20px;
+}
+
+.material-card ul {
+    list-style: none;
+    padding: 0 30px 30px 30px; /* Ajusta padding da lista */
+}
+
+.material-card li {
+    font-size: 1rem;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 10px;
+}
+
+.material-card li strong {
+    color: var(--cor-texto-principal);
+}
+
+/* Navegação e Paginação para Materiais */
+.material-swiper .swiper-button-next,
+.material-swiper .swiper-button-prev {
+    color: var(--cor-primaria) !important; /* Cor das setas */
+}
+
+.swiper-pagination-material .swiper-pagination-bullet {
+    background: var(--cor-texto-secundario) !important;
+}
+.swiper-pagination-material .swiper-pagination-bullet-active {
+    background: var(--cor-primaria) !important;
+}
+
+
+/* ====================
+   SEÇÃO PORTFÓLIO
+   ==================== */
+
+.portfolio-swiper {
+    width: 100%;
+    padding-bottom: 60px; 
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    height: auto; 
+    padding: 10px; 
+}
+
+.portfolio-item {
+    background: var(--cor-fundo-card);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #2a2a4a;
+    transition: transform 0.3s ease;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-info {
+    padding: 25px;
+    flex-grow: 1; 
+}
+
+.portfolio-info h3 {
+    font-size: 1.3rem;
+}
+
+.portfolio-swiper .swiper-button-next,
+.portfolio-swiper .swiper-button-prev {
+    color: var(--cor-primaria) !important;
+}
+
+.portfolio-swiper .swiper-pagination-bullet {
+    background: var(--cor-texto-secundario) !important;
+}
+
+.portfolio-swiper .swiper-pagination-bullet-active {
+    background: var(--cor-primaria) !important;
+}
+
+/* ====================
+   SEÇÃO DIFERENCIAIS
+   ==================== */
+#diferenciais {
+    padding-bottom: 70px; 
+}
+.card-diferencial {
+    text-align: left; 
+    padding: 30px;
+}
+
+.card-diferencial i {
+    font-size: 3rem;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.card-diferencial h3 {
+    font-size: 1.5rem;
+}
+
+/* ====================
+   RODAPÉ (CONTATO)
+   ==================== */
+footer {
+    background-color: #080815;
+    text-align: center;
+    padding: 80px 0;
+    border-top: 1px solid #2a2a4a;
+}
+
+footer h2 {
+    font-size: 2.5rem;
+    text-align: center; 
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 40px;
+    text-align: center; 
+}
+
+.contato-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.contato-link {
+    color: var(--cor-texto-principal);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contato-link:hover {
+    color: var(--cor-primaria);
+}
+
+.contato-link i {
+    margin-right: 10px;
+    color: var(--cor-primaria);
+}
+
+.contato-local {
+    font-size: 1.1rem;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 30px;
+}
+
+.social-links {
+    margin-bottom: 30px;
+}
+
+.social-links a {
+    color: var(--cor-texto-secundario);
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--cor-primaria);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* ====================
+   RESPONSIVIDADE (CELULAR)
+   ==================== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 80px; 
+        left: 0;
+        width: 100%;
+        background: var(--cor-fundo-dark);
+        padding: 20px 0;
+        border-bottom: 1px solid #2a2a4a;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .contato-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-logo {
+        max-width: 250px; 
+    }
+}
