@@ -297,6 +297,7 @@ header .container {
     border: 1px solid #2a2a4a;
     display: flex;
     flex-direction: column;
+   height: 100%
 }
 
 .detalhe-card img {
@@ -603,6 +604,7 @@ footer p {
     }
 
 }
+
 
 
 
