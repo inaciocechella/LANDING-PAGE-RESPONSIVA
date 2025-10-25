@@ -354,7 +354,7 @@ header .container {
 }
 
 .material-card img {
-    width: 100%;
+    width: 50%;
     height: 180px; /* Altura fixa para as imagens */
     object-fit: cover;
     margin-bottom: 20px; /* Espaço entre imagem e texto */
@@ -602,4 +602,5 @@ footer p {
     .hero-logo {
         max-width: 250px; 
     }
+
 }
