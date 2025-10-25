@@ -355,7 +355,7 @@ header .container {
 .material-card img {
     width: 100%;
     height: 300px; /* AUMENTADO: A altura agora é 250px */
-    object-fit: contain; /* ALTERADO: 'contain' mantém a proporção e mostra a imagem inteira */
+    object-fit: cover; /* ALTERADO: 'contain' mantém a proporção e mostra a imagem inteira */
     margin-bottom: 20px; 
 }
 
@@ -603,6 +603,7 @@ footer p {
     }
 
 }
+
 
 
 
