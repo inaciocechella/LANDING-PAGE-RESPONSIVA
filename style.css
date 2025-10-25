@@ -354,8 +354,8 @@ header .container {
 }
 
 .material-card img {
-    width: 50%;
-    height: 180px; /* Altura fixa para as imagens */
+    width: 10%;
+    height: 300px; /* Altura fixa para as imagens */
     object-fit: cover;
     margin-bottom: 20px; /* Espaço entre imagem e texto */
 }
@@ -604,3 +604,4 @@ footer p {
     }
 
 }
+
