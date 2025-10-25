@@ -355,9 +355,9 @@ header .container {
 
 .material-card img {
     width: 100%;
-    height: 180px; /* Altura fixa para as imagens */
-    object-fit: cover;
-    margin-bottom: 20px; /* Espaço entre imagem e texto */
+    height: 280px; /* AUMENTADO: A altura agora é 250px */
+    object-fit: contain; /* ALTERADO: 'contain' mantém a proporção e mostra a imagem inteira */
+    margin-bottom: 20px; 
 }
 
 .material-card h3 {
@@ -604,6 +604,7 @@ footer p {
     }
 
 }
+
 
 
 
