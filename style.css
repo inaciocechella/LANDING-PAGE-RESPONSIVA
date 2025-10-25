@@ -297,7 +297,7 @@ header .container {
     border: 1px solid #2a2a4a;
     display: flex;
     flex-direction: column;
-    height: 100%
+    height: 100%;
 }
 
 .detalhe-card img {
@@ -350,7 +350,6 @@ header .container {
     overflow: hidden; /* Garante que a imagem respeite o card */
     display: flex;
     flex-direction: column;
-    height: 100%; 
 }
 
 .material-card img {
@@ -604,6 +603,7 @@ footer p {
     }
 
 }
+
 
 
 
