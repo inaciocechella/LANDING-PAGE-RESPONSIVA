@@ -142,14 +142,16 @@ header .container {
     height: 100vh;
     min-height: 700px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     text-align: center;
     padding: 0 20px;
+    padding-bottom: 10vh;
     background-image: url('img/fundo-escuro.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -173,7 +175,7 @@ header .container {
     max-width: 350px; 
     width: 80%;       
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .hero h1 {
@@ -603,6 +605,7 @@ footer p {
     }
 
 }
+
 
 
 
